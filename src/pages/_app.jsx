@@ -8,6 +8,8 @@ export default function App({ Component, pageProps }) {
     <StateProvider initialState={initialState} reducer={reducer}>
       <Head>
         <title>WaveLink</title>
+        <description>Chat with others through WaveLink!</description>
+        <meta name="keywords" content="WaveLink, Chat, Message, Text"></meta>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <Component {...pageProps} />

@@ -10,9 +10,9 @@ function ChatContainer() {
   return (
     <div className="h-[80vh] w-full relative flex-grow overflow-auto custom-scrollbar">
       <div className="bg-chat-background bg-no-repeat bg-cover bg-fixed h-full w-full opacity-10 fixed left-0 top-0 z-0"></div>
-      <div className="mx-5 sm:mx-10 py-6 relative bottom-0 z-40 left-0">
+      <div className="mx-5 sm:mx-10 py-6 relative bottom-0 z-40 left-0 overflow-hidden">
         <div className="flex w-full">
-          <div className="flex flex-col justify-end w-full gap-3 sm:gap-1 overflow-auto">
+          <div className="flex flex-col justify-end w-full gap-3 sm:gap-1 overflow-hidden">
             {messages.map((message, index) => (
               <div key={message.id} className={`flex ${message.senderId === currentChatUser.id ? 'justify-start' : 'justify-end'}`} >
                 {message.type === 'text' && (
