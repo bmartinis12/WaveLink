@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ['wavelink-api']
+    domains: ['wavelink-api.adaptable.app', 'localhost']
   }
 };
 

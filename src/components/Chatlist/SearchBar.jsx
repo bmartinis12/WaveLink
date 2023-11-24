@@ -12,7 +12,7 @@ function SearchBar() {
           <BiSearchAlt2 className="text-panel-header-icon cursor-pointer text-lg" />
         </div>
         <div className='w-full'>
-          <input type="text" placeholder='Search or start a new chat...' className='text-sm bg-transparent focus:outline-none text-white w-full' value={contactSearch} onChange={(e) => dispatch({ type: reducerCase.SET_CONTACT_SEARCH, contactSearch: e.target.value })} />
+          <input type="text" placeholder='Search existing chats...' className='text-sm bg-transparent focus:outline-none text-white w-full' value={contactSearch} onChange={(e) => dispatch({ type: reducerCase.SET_CONTACT_SEARCH, contactSearch: e.target.value })} />
         </div>
       </div>
     </div>
