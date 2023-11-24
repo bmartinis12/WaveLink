@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>WaveLink</title>
         <link rel="shortcut icon" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       </Head>
       <Component {...pageProps} />
     </StateProvider>
